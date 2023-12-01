@@ -41,7 +41,7 @@ def replaceTextNumberWithInt(line):
     # the whole replacement text seem silly but it accounts for the case 
     # where we have a letter shared by two numbers
     # eg twone contains both two and one but one would be replaced leaving tw1
-    # so we replace one with one1one and two with two2two and it maintains the integrity of the string
+    # so we replace one with o1e and two with t2o and it maintains the integrity of the string
     
     for i in range(len(number)):
         line = line.replace(number[i], replacementText[i])
