@@ -36,7 +36,7 @@ def firstStar(lines):
 
 def replaceTextNumberWithInt(line):
     number = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine"]
-    replacementText = ["one1one", "two2two", "three3three", "four4four", "five5five", "six6six", "seven7seven", "eight8eight", "nine9nine"]
+    replacementText = ["o1e", "t2o", "t3e", "f4r", "f5e", "s6x", "s7n", "e8t", "n9e"]
     
     # the whole replacement text seem silly but it accounts for the case 
     # where we have a letter shared by two numbers
@@ -51,13 +51,14 @@ def secondStar(lines):
     numberReplacedLines = []
     
     for line in lines:
-        print(line)
         numberReplacedLine = replaceTextNumberWithInt(line)
         numberReplacedLines.append(numberReplacedLine)
     
     firstStar(numberReplacedLines)
 
 
-firstStar(lines)
-secondStar(lines)
+firstStar(lines) # -> 54388
 
+secondStar(lines) # -> 53515
+
+# two stars complete
